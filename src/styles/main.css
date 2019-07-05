@@ -1,0 +1,1041 @@
+body {
+  margin: 0px;
+  font-family: Regular;
+}
+
+@media only screen and (min-width: 1440px) {
+  .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0px 180px 0px 156px;
+  }
+  .boxClip {
+    width: 76%;
+  }
+}
+
+/* Font*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+/* Header*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+.header {
+  margin: 0px 16px 16px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__logo {
+  margin: 12px auto;
+  width: 19vh;
+}
+
+.header__search {
+  min-height: 47px;
+  margin-top: 8px;
+  width: 100%;
+  border-radius: 4px;
+  background: #fafafa url("../assets/icons/SVG/Icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+  text-indent: 43px;
+  font-size: 1.1em;
+  font-family: Regular;
+  color: #323232;
+  border: 1px solid #e1e1e1;
+}
+
+.header__right {
+  margin: 8px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__right--button {
+  height: 50px;
+  width: 90vw;
+  margin: 0px 7px 0px 0px;
+  font-size: 1em;
+  color: white;
+  background-image: url("../assets/icons/SVG/Icon-upload.svg");
+  background-repeat: no-repeat;
+  background-position: 29% 50%;
+  background-color: #0095ff;
+  border-radius: 4px;
+}
+
+.header__right--Mohan {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 16px 24px;
+  }
+  .header__logo {
+    margin: 12px 0px;
+  }
+  .header__toRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__search {
+    margin: 0px;
+    width: 248px;
+  }
+  .header__right {
+    margin: 0px;
+  }
+  .header__right--button {
+    width: 126px;
+    margin: 0px 24px;
+    background-position: 10% 50%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    margin: 16px 180px;
+  }
+  .header__search {
+    width: 330px;
+  }
+}
+
+/* Hero*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+#background {
+  background-color: black;
+}
+
+.hero {
+  background-color: black;
+  position: relative;
+  height: 50vw;
+}
+
+.hero video {
+  width: 100%;
+  height: 50vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__scroll {
+  border-radius: 4px;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  bottom: 1px;
+  position: absolute;
+}
+
+.hero__scroll--hr {
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0vw 1vw;
+}
+
+.hero__scroll--hr hr {
+  height: 1px;
+  width: 79%;
+  margin: auto 10px;
+  border-color: black;
+  background: black;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.hero__scroll--stuffs {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  margin-right: 16px;
+  padding: 4px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__scroll #play {
+  margin-left: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.hero__scroll #fullscreen,
+.hero__scroll #volume {
+  margin: 0px 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin: 0px 34px;
+    height: 52.1vw;
+  }
+  .hero video {
+    height: 52.1vw;
+  }
+  .hero__scroll {
+    padding: 10px 0px;
+  }
+  .hero__scroll #play {
+    margin: 0px;
+  }
+  .hero__scroll--stuffs {
+    margin: 0px;
+  }
+  .hero__scroll--hr {
+    width: 79%;
+  }
+  .hero__scroll--hr hr {
+    margin-top: 13px;
+    margin-bottom: 0px;
+  }
+  .hero__scroll--hr p {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    color: white;
+    white-space: nowrap;
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    margin: 0px 248px;
+    height: 37.5vw;
+  }
+  .hero video {
+    height: 37.5vw;
+  }
+  .hero__scroll--hr {
+    width: 82%;
+  }
+  .hero__scroll--hr hr {
+    margin-top: 15px;
+  }
+  .hero__scroll--hr p {
+    font-size: 1.2vw;
+    margin-bottom: 5px;
+  }
+}
+
+/* Clip*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+.clip {
+  margin: 32px 16px 40px 16px;
+}
+
+.clip__title {
+  font-family: myBold;
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
+
+.clip__letters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 32px;
+}
+
+.clip #channel {
+  font-family: mydemi;
+  margin-right: 8px;
+}
+
+.clip #date {
+  color: #afafaf;
+}
+
+.clip #views,
+.clip #hearts {
+  margin-right: 24px;
+}
+
+.clip__likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 24px;
+}
+
+.clip__likes img {
+  margin-right: 8px;
+}
+
+.clip__description {
+  font-size: 13px;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .clip {
+    margin: 48px 24px;
+  }
+  .clip__title {
+    font-size: 1.9em;
+    margin-bottom: 24px;
+  }
+  .clip #clip {
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .clip #hearts {
+    margin: 0px;
+  }
+  .clip__description {
+    border: none;
+    padding-top: 40px;
+    padding-right: 224px;
+    font-size: 1.75vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .clip {
+    margin: 48px 0px 48px 24px;
+  }
+  .clip__likes {
+    padding-right: 32px;
+  }
+  .clip__description {
+    width: 472px;
+    padding-right: 248px;
+    font-size: 13px;
+  }
+}
+
+/* NewComment*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+.newComment {
+  margin: 0px 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.newComment__num {
+  font-family: myMedium;
+  margin: 0px 0px 32px 0px;
+}
+
+.newComment img {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.newComment__new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newComment__new--comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 18px;
+}
+
+.newComment__new--comment label {
+  color: #afafaf;
+  font-family: myMedium;
+  font-size: 13px;
+}
+
+.newComment__new--comment textarea {
+  border-radius: 4px;
+  border: #e1e1e1 2px solid;
+  width: 91.6%;
+  background-color: #fafafa;
+  margin: 6px 0px 16px 0px;
+}
+
+.newComment__new--comment textarea:focus {
+  border: solid 1.5px #0095ff;
+  outline: none;
+}
+
+.newComment__new--comment button {
+  width: 95%;
+  font-family: myMedium;
+  font-size: 13px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #0095ff;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .newComment {
+    margin: 0px 24px;
+  }
+  .newComment__new {
+    padding-right: 16px;
+  }
+  .newComment__new--comment {
+    margin-left: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 2vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newComment__new--comment label {
+    font-size: 15px;
+  }
+  .newComment__new--comment textarea {
+    font-size: 15px;
+    border-radius: 4px;
+    width: 57.3vw;
+    height: 6px;
+    padding: 20px;
+  }
+  .newComment__new--comment #myButton {
+    font-size: 1em;
+    width: 31.8%;
+    height: 48px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .newComment {
+    padding-bottom: 4px;
+    margin: 0px 0px 0px 24px;
+  }
+  .newComment__new {
+    padding-right: 32px;
+  }
+  .newComment__new--comment {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newComment__new--comment label {
+    font-size: 1vw;
+  }
+  .newComment__new--comment #myButton {
+    font-size: 14px;
+    width: 29%;
+    height: 50px;
+  }
+  .newComment__new--comment textarea {
+    width: 85.25%;
+    height: 10px;
+    padding-top: 10px;
+  }
+}
+
+/* CommentList*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+.users {
+  margin: 0px 16px;
+  padding: 24px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.users__mercury {
+  margin-top: 12px;
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.users__comment {
+  margin-left: 18px;
+}
+
+.users__comment--status {
+  margin: 12px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.users__comment--status #name {
+  font-family: myMedium;
+}
+
+.users__comment--status #date {
+  color: #afafaf;
+}
+
+.users__comment--status, .users__comment--mention {
+  font-size: 13.5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .users {
+    margin: 0px 24px;
+    padding-right: 40px;
+  }
+  .users__comment--status {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .users__comment #name {
+    margin-right: 16px;
+  }
+  .users__comment--status, .users__comment--mention {
+    font-size: 14.5px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .users {
+    margin: 0px 0px 0px 24px;
+  }
+  .users__comment--mention {
+    font-size: 15px;
+  }
+}
+
+/* Videos*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+.videos {
+  margin: 0px 16px;
+}
+
+.videos__next {
+  margin: 40px 0px 16px 0px;
+  color: #afafaf;
+  font-family: myMedium;
+  font-size: 13px;
+}
+
+.videos__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 24px 0px;
+}
+
+.videos__list--thumbnail {
+  display: block;
+}
+
+.videos__list--thumbnail img {
+  width: 120px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 45%;
+     object-position: 100% 45%;
+  border-radius: 4px;
+}
+
+.videos__list--detail {
+  height: 64px;
+  width: 61%;
+}
+
+.videos__list--detail h4 {
+  margin: 0px 0px 0px 16px;
+  font-size: 13.5px;
+}
+
+.videos__list--detail #title {
+  font-family: myMedium;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  width: 48vw;
+}
+
+.videos__list--detail #channel {
+  margin: 8px 0px 8px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .videos {
+    margin: 0px 24px;
+  }
+  .videos__next {
+    font-size: 15px;
+  }
+  .videos h4 {
+    font-size: 15px;
+  }
+  .videos__list--thumbnail {
+    width: 120px;
+  }
+  .videos__list--detail {
+    height: 70px;
+  }
+  .videos__list--detail #title {
+    width: 25vw;
+  }
+  .videos__list--detail #channel {
+    margin: 5px 0px 0px 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .videos {
+    margin: 0px;
+    padding-left: 24px;
+    border-left: 1px solid #e1e1e1;
+  }
+  .videos h4 {
+    font-size: 13px;
+  }
+  .videos__next {
+    font-size: 14px;
+  }
+  .videos__list {
+    width: 285px;
+    margin: 29px 0px;
+  }
+  .videos__list--detail {
+    padding: 0px;
+  }
+  .videos__list--detail #title {
+    width: 11vw;
+  }
+}
+
+/* Upload*/
+@font-face {
+  font-family: Regular;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Light.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: myMedium;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../assets/globalfont/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+.upload {
+  margin: 0px;
+}
+
+.upload__title {
+  font-family: myBold;
+  margin: 0px;
+  border-top: 1px solid #e1e1e1;
+  font-size: 27px;
+  padding: 24px 16px 32px 16px;
+}
+
+.upload__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 16px;
+}
+
+.upload__video #right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.upload__video--text {
+  margin: 0px 0px 8px 0px;
+  font-family: myDemi;
+  font-size: 15px;
+  color: #afafaf;
+}
+
+.upload__video--text--area {
+  height: 143px;
+  width: 99%;
+  font-size: 13px;
+  padding-top: 10px;
+  border: 1px solid #e1e1e1;
+  background-color: #fafafa;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.upload__video--text--area:focus {
+  border: solid 1.5px #0095ff;
+  outline: none;
+}
+
+.upload__video video {
+  border-radius: 4px;
+  width: 288px;
+  height: 153px;
+  margin-bottom: 32px;
+  background-image: url("../assets/images/upload-video-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.upload__video input {
+  height: 32px;
+  font-size: 13px;
+  padding-top: 2px;
+  border: 1px solid #e1e1e1;
+  background-color: #fafafa;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.upload__video input:focus {
+  border: solid 1.5px #0095ff;
+  outline: none;
+}
+
+.upload__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upload__button--publish {
+  font-size: 15px;
+  height: 48px;
+  width: 95vw;
+  border-radius: 4px;
+  background: #0095ff;
+  color: white;
+}
+
+.upload__button--cancel {
+  font-size: 15px;
+  height: 48px;
+  width: 95vw;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: #0095ff;
+}
+
+@media only screen and (min-width: 768px) {
+  .upload__title {
+    padding: 24px 24px 32px 24px;
+  }
+  .upload__video {
+    margin: 0px 24px;
+    border-top: 1px solid #e1e1e1;
+  }
+  .upload__video p {
+    padding-top: 40px;
+  }
+  .upload__video--text--area {
+    margin-bottom: 40px;
+  }
+  .upload video {
+    margin-bottom: 40px;
+    width: 344px;
+    height: 183px;
+  }
+  .upload__button {
+    margin: 0px 24px;
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-top: 1px solid #e1e1e1;
+  }
+  .upload__button--publish, .upload__button--cancel {
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .upload__title {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .upload__video {
+    margin: 0px 180px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .upload__video p {
+    margin: 0px 0px 7px 0px;
+  }
+  .upload__video--text {
+    margin: 0px 0px 3px 0px;
+  }
+  .upload__video--text--area {
+    width: 715px;
+    height: 94px;
+  }
+  .upload video {
+    margin: 0px 24px 32px 0px;
+  }
+  .upload #right {
+    padding-top: 40px;
+  }
+  .upload__button {
+    margin: 0px 180px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

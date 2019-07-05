@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  font-family: Regular;
+}
+
+@media only screen and (min-width: 1440px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 180px 0px 156px;
+  }
+
+  .boxClip {
+    width: 76%;
+  }
+}
+
+/* Font*/
+@import "font.scss";
+
+/* Header*/
+@import "header.scss";
+
+/* Hero*/
+@import "hero.scss";
+
+/* Clip*/
+@import "clip.scss";
+
+/* NewComment*/
+@import "newComment.scss";
+
+/* CommentList*/
+@import "commentList.scss";
+
+/* Videos*/
+@import "videos.scss";
+
+/* Upload*/
+@import "upload.scss";

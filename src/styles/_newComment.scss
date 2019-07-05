@@ -1,0 +1,123 @@
+@import "font.scss";
+
+.newComment {
+  margin: 0px 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+
+  &__num {
+    font-family: myMedium;
+    margin: 0px 0px 32px 0px;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__new {
+    display: flex &--comment {
+      display: flex;
+      flex-direction: column;
+      margin-left: 18px;
+
+      label {
+        color: #afafaf;
+        font-family: myMedium;
+        font-size: 13px;
+      }
+
+      textarea {
+        border-radius: 4px;
+        border: #e1e1e1 2px solid;
+        width: 91.6%;
+        background-color: #fafafa;
+        margin: 6px 0px 16px 0px;
+      }
+
+      textarea:focus {
+        border: solid 1.5px #0095ff;
+        outline: none;
+      }
+
+      button {
+        width: 95%;
+        font-family: myMedium;
+        font-size: 13px;
+        height: 48px;
+        border-radius: 4px;
+        background-color: #0095ff;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .newComment {
+    margin: 0px 24px;
+    &__new {
+      padding-right: 16px;
+      &--comment {
+        margin-left: 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2vw;
+        align-items: center;
+
+        label {
+          font-size: 15px;
+        }
+
+        textarea {
+          font-size: 15px;
+          border-radius: 4px;
+          width: 57.3vw;
+          height: 6px;
+          padding: 20px;
+        }
+
+        #myButton {
+          font-size: 1em;
+          width: 31.8%;
+          height: 48px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .newComment {
+    padding-bottom: 4px;
+    margin: 0px 0px 0px 24px;
+    &__new {
+      padding-right: 32px;
+      &--comment {
+        width: 100%;
+        flex-direction: row;
+        font-size: 14px;
+        align-items: center;
+
+        label {
+          font-size: 1vw;
+        }
+
+        #myButton {
+          font-size: 14px;
+          width: 29%;
+          height: 50px;
+        }
+
+        textarea {
+          width: 85.25%;
+          height: 10px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}

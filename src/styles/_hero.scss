@@ -1,0 +1,138 @@
+@import "font.scss";
+
+#background {
+  background-color: black;
+}
+.hero {
+  background-color: black;
+  position: relative;
+  height: 50vw;
+
+  video {
+    width: 100%;
+    height: 50vw;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+  }
+
+  &__scroll {
+    border-radius: 4px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 1px;
+    position: absolute;
+
+    &--hr {
+      width: 75%;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      margin: 0vw 1vw;
+
+      hr {
+        height: 1px;
+        width: 79%;
+        margin: auto 10px;
+        border-color: black;
+        background: black;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+    }
+    &--stuffs {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 4px;
+      margin-right: 16px;
+      padding: 4px 5px;
+      display: flex;
+    }
+
+    #play {
+      margin-left: 16px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    #fullscreen,
+    #volume {
+      margin: 0px 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin: 0px 34px;
+    height: 52.1vw;
+
+    video {
+      height: 52.1vw;
+    }
+
+    &__scroll {
+      padding: 10px 0px;
+
+      #play {
+        margin: 0px;
+      }
+
+      &--stuffs {
+        margin: 0px;
+      }
+
+      &--hr {
+        width: 79%;
+        hr {
+          margin-top: 13px;
+          margin-bottom: 0px;
+        }
+
+        p {
+          margin-top: 6px;
+          margin-bottom: 0px;
+          color: white;
+          white-space: nowrap;
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    margin: 0px 248px;
+    height: 37.5vw;
+
+    video {
+      height: 37.5vw;
+    }
+
+    &__scroll {
+      &--hr {
+        width: 82%;
+        hr {
+          margin-top: 15px;
+        }
+
+        p {
+          font-size: 1.2vw;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
