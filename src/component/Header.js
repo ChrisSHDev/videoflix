@@ -1,6 +1,6 @@
 import React from "react";
 import Mohan from "../assets/images/Mohan-muruge.jpg";
-import Logo from "../assets/logo/Logo-brainflix.svg";
+import Logo from "../assets/logo/Logo-videoflix.png";
 import { Link } from "react-router-dom";
 
 function Header({ history }) {
