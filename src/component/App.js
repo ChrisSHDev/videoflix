@@ -10,7 +10,6 @@ import VideoJson from "../model/data";
 import contentsController from '../helper/contentsController';
 
 const videoData = VideoJson;
-//const videoUrl = "http://localhost:5000/video/videos";
 
 class App extends Component {
 
@@ -55,29 +54,7 @@ class App extends Component {
 
     console.log(this.state.videos);
     console.log(newVideosData);
-/*
-    axios.get(videoUrl).then(video => {
-      const newVideos = video.data.map(videolist => {
-        return {
-          id: videolist.id,
-          title: videolist.title,
-          channel: videolist.channel,
-          image: videolist.image
-        };
-      });
 
-      const mainVideoUrl = `http://localhost:5000/video/videos/${
-        video.data[0].id
-      }`;
-      console.log(mainVideoUrl);
-      axios.get(mainVideoUrl).then(response => {
-        this.setState({
-          mainVideo: response.data,
-          videos: newVideosData
-        });
-      });
-    });
-*/
   }
 
   componentDidUpdate(prevState) {
@@ -100,21 +77,10 @@ class App extends Component {
       });
     }
 
-    /*
-    axios.get(currentVideo).then(response => {
-      if (this.props.match.params.id !== this.state.mainVideo.id) {
-        this.setState({
-          mainVideo: response.data
-        });
-      }
-    });
-    */
-    //console.log(this.state.mainVideo);
+
   }
 
   render() {
-    //console.log(this.state.mainVideo.comments);
-
     return (
       <div className="App">
         <Header history={this.props.history} />
